@@ -1,0 +1,17 @@
+{
+  "name": "ica1",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

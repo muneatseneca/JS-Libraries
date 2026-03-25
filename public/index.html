@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+
+</head>
+
+<body>
+
+    <header>
+        <h1><span id="typed"></span></h1>
+    </header>
+
+    <section class="hero" data-aos="zoom-in-down">
+        <img src="assets/images/tokyotower.jpg" alt="Hero Image">
+    </section>
+
+    <section class="info" data-aos="zoom-in-down">
+        <h2>About Tokyo</h2>
+        <p>
+        Tokyo is Japan’s capital and one of the most dynamic cities in the world. 
+        It has a blend of modern technology and traditional culture, offering everything 
+        from neon-lit streets to historic temples and peaceful parks.
+        </p>
+    </section>
+
+    <!-- Glide for top attractions carousel -->
+    <section class="carousel" data-aos="zoom-in-down">
+        <h2>Top Attractions</h2>
+
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+
+                    <li class="glide__slide">
+                        <img src="assets/images/shibuya1.jpg">
+                        <h4>Shibuya Crossing</h4>
+                        <p>The world's busiest pedestrian intersection shown in many films and magazines. At peak hours, thousands of pedestrians cross from all angles, giving it the "Scramble" nickname. </p>
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="assets/images/yomiuriland.jpg">
+                        <h4>Yomiuriland</h4>
+                        <p>Tokyo's largest amusement  park that offers cherry blossoms in the spring, pools in the summer, illuminations in the winter, and fun for children and adults alike year-round.</p>
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="assets/images/ueno1.jpg">
+                        <h4>Ueno Park</h4>
+                        <p>Previously a part of Kaneji Temple, the large public western-style park opened in 1873. There are many cherryblossom trees, and the area is known for having multiple museums.</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Map section with pins -->
+        <div class="map-section">
+            <h2>Map of Locations</h2>
+
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" data-aos="zoom-in-down">
+        <h2>Photo Gallery</h2>
+        <p>A glimpse of Tokyo’s vibrant city life, nature, and landmarks.</p>
+        <div class="gallery-grid">
+            <a href="assets/images/tokyo.jpg" data-lightbox="tokyo">
+            <img src="assets/images/tokyo.jpg">
+            </a>
+
+            <a href="assets/images/shibuya2.jpg" data-lightbox="tokyo">
+            <img src="assets/images/shibuya2.jpg">
+            </a>
+
+            <a href="assets/images/ueno2.jpeg" data-lightbox="tokyo">
+            <img src="assets/images/ueno2.jpeg">
+            </a>
+
+            <a href="assets/images/streets.jpg" data-lightbox="tokyo">
+            <img src="assets/images/streets.jpg">
+            </a>
+
+            <a href="assets/images/temple.jpg" data-lightbox="tokyo">
+            <img src="assets/images/temple.jpg">
+            </a>
+
+            <a href="assets/images/tokyo2.jpg" data-lightbox="tokyo">
+            <img src="assets/images/tokyo2.jpg">
+            </a>
+        </div>
+    </section>
+
+    <section class="info" data-aos="zoom-in-down">
+        <h2>Things to Do</h2>
+        <p>
+        Explore busy shopping districts, relax in scenic parks, visit cultural landmarks, 
+        and enjoy unique food experiences across the city.
+        </p>
+    </section>
+
+    <footer>
+        <p>Travel Site</p>
+    </footer>
+
+
+
+    <!-- ///////JS//////// -->
+
+    <!-- Glide for carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- Animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Lightbox for gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <!-- LEaflet for map -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Ani,ated typography -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- my js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
